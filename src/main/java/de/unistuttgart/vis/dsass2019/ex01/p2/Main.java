@@ -14,6 +14,7 @@ public class Main {
 		SpeedList<Integer> testList = new SpeedList<>();
 		testList.prepend(4);
 		testList.prepend(7);
+		int test = testList.size();
 
 
         System.out.println();

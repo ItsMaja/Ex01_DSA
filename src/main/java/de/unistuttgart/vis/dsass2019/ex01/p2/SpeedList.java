@@ -1,13 +1,24 @@
 package de.unistuttgart.vis.dsass2019.ex01.p2;
 
+
 public class SpeedList<T> implements ISpeedList<T> {
 
 	private Node<T> head;
 	
 	@Override
 	public int size() {
-		
-		return 0;
+		 if (head == null) {
+		 	return 0;
+		 }
+		 Node<T> currentNode = head;
+		 int result = 1;
+
+		 while (currentNode.hasNext()) {
+		 	result++;
+		 	currentNode = currentNode.getNext();
+		 }
+		 return result;
+
 	}
 
 	@Override

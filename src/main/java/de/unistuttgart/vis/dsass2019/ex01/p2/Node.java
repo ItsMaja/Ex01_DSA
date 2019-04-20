@@ -48,7 +48,8 @@ public class Node <T> {
         this.eighth = eighth;
     }
 
-    public boolean hasNext(){
-	    return false;
+    public boolean hasNext() {
+
+	    return next != null;
     }
 }
