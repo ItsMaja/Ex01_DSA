@@ -52,4 +52,8 @@ public class Node <T> {
 
 	    return next != null;
     }
+
+    public boolean hasEighth() {
+	    return eighth != null;
+    }
 }
